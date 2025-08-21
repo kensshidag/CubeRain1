@@ -4,6 +4,7 @@ using UnityEngine;
 public class CubeSpawner : MonoBehaviour
 {
     [SerializeField] private Camera _camera;
+    [SerializeField] private Exploder _exploder;
     [SerializeField] private LayerMask _cubeLayer;
     [SerializeField] private List<Cube> _cubes;
     [SerializeField] private int _minCubeSpawnCount = 2;
@@ -42,16 +43,19 @@ public class CubeSpawner : MonoBehaviour
     private void SpawnCubes(Cube cube)
     {
         UnregisterCube(cube);
-        
+
+        List<Cube> newCubes = new();
         int cubesToSpawnCount = UnityEngine.Random.Range(_minCubeSpawnCount, _maxCubeSpawnCount + 1); 
 
         for (int i = 0; i < cubesToSpawnCount; i++)
         {
             Cube newCube = Instantiate(cube, cube.transform.position, Quaternion.identity);
+            newCubes.Add(newCube);
             newCube.Initialize();
             RegisterCube(newCube);
-        }    
+        }
         
+        _exploder.Explode(newCubes, cube.transform.position);
         Destroy(cube.gameObject);
     }
 

@@ -357,6 +357,7 @@
 -analyzer:"E:/Unity/Unity1/2022.3.61f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/Cube.cs"
 "Assets/Scripts/CubeSpawner.cs"
+"Assets/Scripts/Exploder.cs"
 -langversion:9.0
 /deterministic
 /optimize+
