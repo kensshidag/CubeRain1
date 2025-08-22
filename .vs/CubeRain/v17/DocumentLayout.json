@@ -7,12 +7,24 @@
       "RelativeMoniker": "D:0:0:{06E3F611-310D-7594-E767-20B03BAA0F6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cubespawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{06E3F611-310D-7594-E767-20B03BAA0F6F}|Assembly-CSharp.csproj|e:\\unity\\unityprojects\\cuberain\\assets\\scripts\\exploder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{06E3F611-310D-7594-E767-20B03BAA0F6F}|Assembly-CSharp.csproj|E:\\Unity\\UnityProjects\\CubeRain\\assets\\scripts\\inputreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06E3F611-310D-7594-E767-20B03BAA0F6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inputreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06E3F611-310D-7594-E767-20B03BAA0F6F}|Assembly-CSharp.csproj|E:\\Unity\\UnityProjects\\CubeRain\\assets\\scripts\\exploder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{06E3F611-310D-7594-E767-20B03BAA0F6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\exploder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{06E3F611-310D-7594-E767-20B03BAA0F6F}|Assembly-CSharp.csproj|e:\\unity\\unityprojects\\cuberain\\assets\\scripts\\cube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{06E3F611-310D-7594-E767-20B03BAA0F6F}|Assembly-CSharp.csproj|e:\\unity\\unityprojects\\cuberain\\assets\\scripts\\cubeclickhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06E3F611-310D-7594-E767-20B03BAA0F6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cubeclickhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06E3F611-310D-7594-E767-20B03BAA0F6F}|Assembly-CSharp.csproj|E:\\Unity\\UnityProjects\\CubeRain\\assets\\scripts\\cube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{06E3F611-310D-7594-E767-20B03BAA0F6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{06E3F611-310D-7594-E767-20B03BAA0F6F}|Assembly-CSharp.csproj|e:\\unity\\unityprojects\\cuberain\\assets\\scripts\\raycaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{06E3F611-310D-7594-E767-20B03BAA0F6F}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\raycaster.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +34,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CubeClickHandler.cs",
+              "DocumentMoniker": "E:\\Unity\\UnityProjects\\CubeRain\\Assets\\Scripts\\CubeClickHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CubeClickHandler.cs",
+              "ToolTip": "E:\\Unity\\UnityProjects\\CubeRain\\Assets\\Scripts\\CubeClickHandler.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CubeClickHandler.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T21:03:17.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Raycaster.cs",
+              "DocumentMoniker": "E:\\Unity\\UnityProjects\\CubeRain\\Assets\\Scripts\\Raycaster.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Raycaster.cs",
+              "ToolTip": "E:\\Unity\\UnityProjects\\CubeRain\\Assets\\Scripts\\Raycaster.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Raycaster.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwCAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T20:50:42.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "InputReader.cs",
+              "DocumentMoniker": "E:\\Unity\\UnityProjects\\CubeRain\\Assets\\Scripts\\InputReader.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\InputReader.cs",
+              "ToolTip": "E:\\Unity\\UnityProjects\\CubeRain\\Assets\\Scripts\\InputReader.cs",
+              "RelativeToolTip": "Assets\\Scripts\\InputReader.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-22T20:47:44.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Exploder.cs",
               "DocumentMoniker": "E:\\Unity\\UnityProjects\\CubeRain\\Assets\\Scripts\\Exploder.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Exploder.cs",
@@ -45,20 +96,20 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\CubeSpawner.cs",
               "ToolTip": "E:\\Unity\\UnityProjects\\CubeRain\\Assets\\Scripts\\CubeSpawner.cs",
               "RelativeToolTip": "Assets\\Scripts\\CubeSpawner.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAowC4AAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-18T20:46:02.096Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Cube.cs",
               "DocumentMoniker": "E:\\Unity\\UnityProjects\\CubeRain\\Assets\\Scripts\\Cube.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Cube.cs",
               "ToolTip": "E:\\Unity\\UnityProjects\\CubeRain\\Assets\\Scripts\\Cube.cs",
               "RelativeToolTip": "Assets\\Scripts\\Cube.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-18T20:16:24.473Z",
               "EditorCaption": ""

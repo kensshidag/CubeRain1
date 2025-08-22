@@ -1,48 +1,16 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class CubeSpawner : MonoBehaviour
 {
-    [SerializeField] private Camera _camera;
-    [SerializeField] private Exploder _exploder;
-    [SerializeField] private LayerMask _cubeLayer;
     [SerializeField] private List<Cube> _cubes;
     [SerializeField] private int _minCubeSpawnCount = 2;
     [SerializeField] private int _maxCubeSpawnCount = 6;
 
-    private Ray _ray;
-
-    private void Start()
+    public List<Cube> SpawnCubes(Cube cube)
     {
-        foreach (var cube in _cubes)
-        {
-            cube.SplitRequested += SpawnCubes;
-        }
-    }
-
-    private void Update()
-    {
-        ClickToCube();
-    }
-
-    private void ClickToCube()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            _ray = _camera.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-
-            if (Physics.Raycast(_ray, out hit, Mathf.Infinity, _cubeLayer))
-            {
-                Cube cube = hit.transform.GetComponent<Cube>();
-                cube.TrySplit();
-            }
-        }
-    }
-
-    private void SpawnCubes(Cube cube)
-    {
-        UnregisterCube(cube);
+        _cubes.Remove(cube);
 
         List<Cube> newCubes = new();
         int cubesToSpawnCount = UnityEngine.Random.Range(_minCubeSpawnCount, _maxCubeSpawnCount + 1); 
@@ -52,28 +20,10 @@ public class CubeSpawner : MonoBehaviour
             Cube newCube = Instantiate(cube, cube.transform.position, Quaternion.identity);
             newCubes.Add(newCube);
             newCube.Initialize();
-            RegisterCube(newCube);
-        }
-        
-        _exploder.Explode(newCubes, cube.transform.position);
-        Destroy(cube.gameObject);
-    }
-
-    private void RegisterCube(Cube cube)
-    {
-        if (!_cubes.Contains(cube))
-        {
             _cubes.Add(cube);
-            cube.SplitRequested += SpawnCubes;
         }
-    }
-
-    private void UnregisterCube(Cube cube)
-    {
-        if (_cubes.Contains(cube))
-        {
-            _cubes.Remove(cube);
-            cube.SplitRequested -= SpawnCubes;
-        }
+       
+        Destroy(cube.gameObject);
+        return newCubes;
     }
 }

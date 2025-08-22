@@ -7,8 +7,6 @@ public class Cube : MonoBehaviour
 {
     [SerializeField] private float _splitChance = 1.0f;
 
-    public event Action<Cube> SplitRequested;
-
     private float _scaleDivider = 2.0f;
     private float _chanceDivider = 2.0f;
     private Renderer _renderer;
@@ -18,15 +16,16 @@ public class Cube : MonoBehaviour
         _renderer = GetComponent<Renderer>();
     }
 
-    public void TrySplit()
+    public bool TrySplit()
     {
         if (_splitChance >= UnityEngine.Random.value)
         {
-            SplitRequested?.Invoke(this);
+            return true;
         }
         else
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
+            return false;
         }
     }      
 
