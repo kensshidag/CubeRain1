@@ -12,11 +12,11 @@ public class CubeClickHandler : MonoBehaviour
 
     private void OnEnable()
     {
-        _raycaster.OnCubeClicked += ProcessClick;
+        _raycaster.CubeClicked += ProcessClick;
     }
     private void OnDisable()
     {
-        _raycaster.OnCubeClicked -= ProcessClick;
+        _raycaster.CubeClicked -= ProcessClick;
     }
 
     private void ProcessClick(Cube cube)

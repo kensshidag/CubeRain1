@@ -9,9 +9,10 @@ public class Raycaster : MonoBehaviour
     [SerializeField] private Camera _camera;
     [SerializeField] private LayerMask _cubeLayer;
 
-    public event Action<Cube> OnCubeClicked;
+    public event Action<Cube> CubeClicked;
 
     private Ray _ray;
+    private Cube _cube;
 
     private void OnEnable()
     {
@@ -29,8 +30,10 @@ public class Raycaster : MonoBehaviour
 
         if (Physics.Raycast(_ray, out hit, Mathf.Infinity, _cubeLayer))
         {
-            Cube cube = hit.collider.GetComponent<Cube>();
-            OnCubeClicked?.Invoke(cube);
+            if (hit.collider.TryGetComponent<Cube>(out _cube))
+            {
+                CubeClicked?.Invoke(_cube);
+            }                    
         }
     }
 }

@@ -3,11 +3,13 @@ using UnityEngine;
 
 public class InputReader : MonoBehaviour
 {
+    private const int LeftMouseButton = 0;
+
     public event Action MouseClicked;
 
-    void Update()
+    private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(LeftMouseButton))
         {
             MouseClicked?.Invoke();
         }
