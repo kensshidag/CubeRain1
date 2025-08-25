@@ -151,11 +151,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9289e5e059bdac04a92614161aeed672, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cubes:
-  - {fileID: 563847480}
-  - {fileID: 417455029}
-  - {fileID: 2126019624}
-  - {fileID: 492040589}
   _minCubeSpawnCount: 2
   _maxCubeSpawnCount: 6
 --- !u!4 &15647484
@@ -335,28 +330,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 261a911cbdb6d69469260cbae3dfaaa0, type: 3}
---- !u!114 &417455029 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5940887529122889330, guid: 261a911cbdb6d69469260cbae3dfaaa0, type: 3}
-  m_PrefabInstance: {fileID: 417455028}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5ea2e4397fdb9445b22132ec948065c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &492040589 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5940887529122889330, guid: 261a911cbdb6d69469260cbae3dfaaa0, type: 3}
-  m_PrefabInstance: {fileID: 845564475}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5ea2e4397fdb9445b22132ec948065c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &502235674
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,17 +377,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &563847480 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5940887529122889330, guid: 261a911cbdb6d69469260cbae3dfaaa0, type: 3}
-  m_PrefabInstance: {fileID: 1498197660542354041}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5ea2e4397fdb9445b22132ec948065c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1083,8 +1045,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b95f9c6b3435dbb48a4e82d6dd4a8d30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _explosionForse: 750
-  _explosionRadius: 5
+  _explosionForse: 400
+  _explosionRadius: 3
 --- !u!4 &1577859284
 Transform:
   m_ObjectHideFlags: 0
@@ -1416,17 +1378,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2126019624 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5940887529122889330, guid: 261a911cbdb6d69469260cbae3dfaaa0, type: 3}
-  m_PrefabInstance: {fileID: 1745736834}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5ea2e4397fdb9445b22132ec948065c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1498197660542354041
 PrefabInstance:
   m_ObjectHideFlags: 0

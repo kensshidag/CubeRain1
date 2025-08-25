@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -25,6 +24,10 @@ public class CubeClickHandler : MonoBehaviour
         {
             _spawnedCubes = _cubeSpawner.SpawnCubes(cube);
             _exploder.Explode(_spawnedCubes, cube.transform.position);
+        }
+        else
+        {
+            _exploder.ExplodeAround(cube.transform.position, cube.Scale);
         }
     }
 }
